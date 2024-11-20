@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 main{
     min-width:600px;
   }
@@ -73,6 +76,9 @@ main{
     font-family:Inter;
     margin-right:50px;
   }
+  #hero-text p{
+    line-height:25px;
+  }
   #header-img{
     margin:auto;
     display: flex;
@@ -93,7 +99,7 @@ main{
   }
   /*INFO SECTION*/
   #info-section{
-    margin:2% auto 5% auto;
+    margin:2% auto;
     padding:1% 5% 1% 5%;
     font-family:Inter;
     background-color:#EBE3DE;
@@ -112,7 +118,7 @@ main{
   }
   /*OPTIONS SECTION*/
   #options-section{
-    margin:5% auto;
+    margin:2% auto;
     width:100%;
     height:100%;
     max-width:750px;
