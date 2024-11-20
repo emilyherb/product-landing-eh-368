@@ -17,7 +17,9 @@ main{
     border:1px solid grey;
     padding:2%;
   }
-  
+  main{
+    min-width:600px;
+  }
   /*NAV SECTION*/
   nav{
     list-style-type: none;
