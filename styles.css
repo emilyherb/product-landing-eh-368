@@ -64,7 +64,7 @@ main{
   /*HERO SECTION*/
   #hero-section{
     padding:80px 20px 20px 20px;
-    margin-top:2%;
+    margin-top:3%;
     display: flex;
     justify-content: flex-end;
   }
@@ -93,7 +93,7 @@ main{
   }
   /*INFO SECTION*/
   #info-section{
-    margin:5% auto;
+    margin:2% auto 5% auto;
     padding:1% 5% 1% 5%;
     font-family:Inter;
     background-color:#EBE3DE;
@@ -107,6 +107,7 @@ main{
   }
   #toy-pic{
     width:50%;
+    margin-top:8%;
     margin-left:20%;
   }
   /*OPTIONS SECTION*/
