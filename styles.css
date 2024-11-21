@@ -1,9 +1,15 @@
 html {
     scroll-behavior: smooth;
+  
   }
-main{
-    min-width:600px;
+  body{
+    margin:0;
+    padding:0;
   }
+  main {
+    max-width: 100%;
+    overflow: hidden; 
+}
   header{
     display:flex;
     flex-direction:row;
@@ -107,23 +113,45 @@ main{
     background-color:grey;
   }
   /*INFO SECTION*/
-  #info-section{
-    margin:2% auto;
-    padding:1% 5% 1% 5%;
-    font-family:Inter;
-    background-color:#EBE3DE;
-    border-radius:10px;
-    display:flex;
-    max-width:900px;
+  #info-section {
+    margin: 2% auto;
+    padding: 1% 5%;
+    font-family: Inter;
+    background-color: #EBE3DE;
+    border-radius: 10px;
+    max-width: 900px;
   }
-  #treat-pic{
-    width:50%;
-    margin-left:10%;
+  
+  .info-group {
+    display: flex;
+    flex-direction: row; /* Default: image on the left */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
   }
-  #toy-pic{
-    width:50%;
-    margin-top:8%;
-    margin-left:20%;
+  
+  .info-group img {
+    width: 40%;
+    margin-right: 30px; /* Add space between image and text */
+  }
+  
+  .info-group div {
+    flex: 1; /* Ensure the text takes up the remaining space */
+  }
+  
+  .info-group h2 {
+    margin-bottom: 10px;
+    font-family: Inter;
+  }
+  
+  .info-group.reverse {
+    flex-direction: row-reverse; /* Reverse the order: text on the left, image on the right */
+  }
+  
+  .info-group.reverse img {
+    margin-right: 0; /* Remove margin on reversed image */
+    margin-left: 30px; /* Add space on the left of the image */
   }
   /*OPTIONS SECTION*/
   #options-section{
@@ -182,7 +210,11 @@ main{
     padding:2%;
     min-width:550px;
     max-height:70px;
+
   }
+
+
+
   @media screen and (max-width: 768px) {
     /* INFO SECTION */
     #info-section {
@@ -224,7 +256,23 @@ main{
       height: 315px; 
     }
   
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .info-group {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center;
+    }
   
+    .info-group img {
+      margin: 10px 0; /* Add space between stacked elements */
+      width: 60%; /* Adjust image size for smaller screens */
+    }
+  
+    .info-group div {
+      text-align: center;
+    }
   }
   
   
