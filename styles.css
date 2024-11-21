@@ -15,7 +15,10 @@ html {
     flex-direction:row;
   }
   #header-img {
-    width: 200px;
+    margin:auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
   }
   #email{
     border:1px solid grey;
@@ -95,10 +98,11 @@ html {
   #hero-text p{
     line-height:25px;
   }
-  #header-img{
+  #hero-img{
     margin:auto;
     display: flex;
     justify-content: flex-end;
+    width:300px;
   }
   input{
     border-radius:8px;
