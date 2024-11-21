@@ -8,25 +8,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("nav-links");
+    menu.classList.toggle("active");
+  }
+</script>
+
     <title>Bunny Box</title>
     <link rel="icon" type="image/x-icon" href="https://tinypic.host/images/2024/11/20/bunnyinbox.png">
 </head>
 
 <body>
 
-<header id="header">
-
-
-<!--NAVBAR-->
-<nav id="nav-bar">
-  <img id="header-img" src="https://tinypic.host/images/2024/11/20/Bunny-Box-Straight-Logo.png" alt="logo">
-<ul>
-<li><a class="nav-link" href="#hero-section">About Us</a></li>
-<li><a  class="nav-link"href="#info-section">Ingredients</a></li>
-<li><a class="nav-link" href="#options-section">Options</a></li>
-<li><a class="nav-link" href="#video-section">Social</a></li>
-  </ul>
-  </nav>
+  <header id="header">
+    <!-- NAVBAR -->
+    <nav id="nav-bar">
+      <img id="header-img" src="https://tinypic.host/images/2024/11/20/Bunny-Box-Straight-Logo.png" alt="logo">
+      
+      <!-- Hamburger Menu Icon (visible only on small screens) -->
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776; <!-- This is the hamburger icon (3 horizontal lines) -->
+      </div>
+      
+      <!-- Navigation Links (hidden on small screens) -->
+      <ul id="nav-links">
+        <li><a class="nav-link" href="#hero-section">About Us</a></li>
+        <li><a class="nav-link" href="#info-section">Ingredients</a></li>
+        <li><a class="nav-link" href="#options-section">Options</a></li>
+        <li><a class="nav-link" href="#video-section">Social</a></li>
+      </ul>
+    </nav>
   </header>
   <!--END NAVBAR-->
 <main>

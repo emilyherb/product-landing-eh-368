@@ -14,10 +14,8 @@ html {
     display:flex;
     flex-direction:row;
   }
-  #header-img{
-    width:250px;
-    height:100%;
-    margin-right:50px;
+  #header-img {
+    width: 200px;
   }
   #email{
     border:1px solid grey;
@@ -27,20 +25,16 @@ html {
     min-width:600px;
   }
   /*NAV SECTION*/
-  nav{
-    list-style-type: none;
-    padding: 1%;
-    margin: 0;
-    width:100%;
-    min-width:550px;
-    max-height:70px;
-    top:0;
-    left:0;
-    right:0;
+  nav {
     display: flex;
     justify-content: flex-end;
-    position:fixed;
-  background-color:#F1F1F1;
+    align-items: center;
+    background-color: #F1F1F1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1%;
+    z-index: 100;
   }
   
   nav ul{
@@ -70,6 +64,13 @@ html {
     text-decoration:none;
     color:black;
   }
+  /* Hamburger menu styles (hidden by default) */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right:3%;
+}
   
   
   /*HERO SECTION*/
@@ -228,6 +229,28 @@ html {
 
 
   @media screen and (max-width: 768px) {
+     /* Show hamburger menu and hide nav links */
+  .hamburger-menu {
+    display: block;
+  }
+
+  #nav-links {
+    display: none; /* Hide the nav links by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+  }
+
+  #nav-links.active {
+    display: flex; /* Show nav links when 'active' class is added */
+  }
 
     /* OPTIONS SECTION */
     #options-section {
