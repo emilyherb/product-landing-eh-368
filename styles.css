@@ -8,7 +8,8 @@ html {
   }
   main {
     max-width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
+    min-width:768px;
 }
   header{
     display:flex;
@@ -24,9 +25,7 @@ html {
     border:1px solid grey;
     padding:2%;
   }
-  main{
-    min-width:600px;
-  }
+  
   /*NAV SECTION*/
   nav {
     display: flex;
@@ -168,6 +167,8 @@ html {
   
   .info-group.reverse img {
     width: 30%;
+    margin-bottom:30px;
+    margin-top:10px;
     
   }
   /*OPTIONS SECTION*/
@@ -237,6 +238,9 @@ html {
   .hamburger-menu {
     display: block;
   }
+  main {
+    max-width:768px;
+}
 
   #nav-links {
     display: none; /* Hide the nav links by default */
@@ -286,15 +290,20 @@ html {
       height: 315px; 
     }
 
+#info-section{
+  margin:2%;
+}
 
-  .info-group {
+
+  .info-group, .info-group.reverse {
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center the content horizontally */
     text-align: center; /* Center the text */
   }
 
-  .info-group img {
-    width: 80%; /* Adjust image size for smaller screens */
+
+  .info-group img, .info-group.reverse img {
+    width: 50%; /* Adjust image size for smaller screens */
     margin: 20px 0; /* Add space between image and text */
   }
 
@@ -309,7 +318,7 @@ html {
     font-size: 1.5em; /* Optional: Adjust font size for smaller screens */
   }
 
-  .info-group p {
+  .info-group p{
     max-width: 100%; /* Let paragraph use the full width */
     line-height: 1.5;
     margin: 0;
